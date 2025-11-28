@@ -23,39 +23,20 @@
                     </div>
                 </div>
                 <div class="header-right">
-                    <div class="lang-switcher">
-                        <button class="lang-btn active" data-lang="th"><i class="fas fa-language"></i> ไทย</button>
-                        <button class="lang-btn" data-lang="en"><i class="fas fa-globe"></i> EN</button>
-                    </div>
-                    <div class="contact-info">
-                        <p><i class="fas fa-phone-alt"></i> <span data-th="โทรสอบถาม" data-en="Call Us">โทรสอบถาม</span>: <strong>02-XXX-XXXX</strong></p>
-                        <p><i class="fas fa-clock"></i> <span data-th="จันทร์-ศุกร์ 9:00-16:00" data-en="Mon-Fri 9:00-16:00">จันทร์-ศุกร์ 9:00-16:00</span></p>
-                    </div>
-                    <div class="cart-info">
-                        <div class="cart-icon"><i class="fas fa-shopping-cart"></i><span class="cart-badge">0</span></div>
-                        <div class="cart-details">
-                            <span class="cart-count" data-th="0 สินค้า" data-en="0 Items">0 สินค้า</span>
+                    <div class="header-controls">
+                        <div class="lang-switcher">
+                            <button class="lang-btn active" data-lang="th">ไทย</button>
+                            <button class="lang-btn" data-lang="en">EN</button>
+                        </div>
+                        <div class="cart-info-compact">
+                            <i class="fas fa-shopping-cart"></i>
+                            <span class="cart-badge">0</span>
                             <span class="cart-price">฿0.00</span>
                         </div>
-                        <a href="#" class="cart-link"><i class="fas fa-arrow-right"></i></a>
                     </div>
                 </div>
             </div>
         </div>
-        
-        <!-- Navigation Bar -->
-        <nav class="navbar">
-            <div class="container">
-                <ul class="nav-menu">
-                    <li><a href="#"><i class="fas fa-home"></i> <span data-th="หน้าแรก" data-en="Home">หน้าแรก</span></a></li>
-                    <li><a href="#"><i class="fas fa-truck"></i> <span data-th="ข้อมูลการจัดส่ง" data-en="Shipping">ข้อมูลการจัดส่ง</span></a></li>
-                    <li><a href="#"><i class="fas fa-envelope"></i> <span data-th="ติดต่อเรา" data-en="Contact Us">ติดต่อเรา</span></a></li>
-                    <li><a href="#"><i class="fas fa-info-circle"></i> <span data-th="เกี่ยวกับเรา" data-en="About Us">เกี่ยวกับเรา</span></a></li>
-                    <li><a href="#"><i class="fas fa-question-circle"></i> <span data-th="คำถามที่พบบ่อย" data-en="FAQ">คำถามที่พบบ่อย</span></a></li>
-                    <li><a href="#"><i class="fas fa-user"></i> <span data-th="บัญชีของคุณ" data-en="Your Account">บัญชีของคุณ</span></a></li>
-                </ul>
-            </div>
-        </nav>
     </header>
 
     <!-- Main Content Area -->
@@ -63,8 +44,16 @@
         <div class="container">
             <!-- Sidebar Categories -->
             <aside class="sidebar">
+                <button class="sidebar-toggle" aria-label="Toggle Menu">
+                    <i class="fas fa-bars"></i>
+                    <span data-th="เมนู" data-en="Menu">เมนู</span>
+                </button>
+                <div class="sidebar-content">
                 <div class="category-section">
-                    <h3 class="section-title"><i class="fas fa-chess-rook"></i> <span data-th="โมเดลสงคราม" data-en="Wargame Miniatures">โมเดลสงคราม</span></h3>
+                    <h3 class="section-title collapsible-title">
+                        <span><i class="fas fa-chess-rook"></i> <span data-th="โมเดลสงคราม" data-en="Wargame Miniatures">โมเดลสงคราม</span></span>
+                        <i class="fas fa-chevron-down toggle-icon"></i>
+                    </h3>
                     <ul class="category-list">
                         <li><a href="#"><i class="fas fa-star"></i> <span data-th="สินค้าใหม่" data-en="New Releases">สินค้าใหม่</span></a></li>
                         <li><a href="#"><i class="fas fa-gift"></i> <span data-th="บัตรของขวัญ" data-en="Gift Vouchers">บัตรของขวัญ</span></a></li>
@@ -73,72 +62,85 @@
                         <li><a href="#"><i class="fas fa-book"></i> <span data-th="หนังสือกฎเกม" data-en="Wargame Rule Books">หนังสือกฎเกม</span></a></li>
                         <li><a href="#"><i class="fas fa-users"></i> <span data-th="เซตกองทัพ" data-en="Army Deals">เซตกองทัพ</span></a></li>
                         <li class="category-divider"></li>
-                        <li><a href="#">28mm โบราณ</a></li>
-                        <li><a href="#">28mm ยุคมืด</a></li>
-                        <li><a href="#">SAGA ฉบับที่ 2</a></li>
-                        <li><a href="#">28mm ยุคกลาง</a></li>
-                        <li><a href="#">28mm ซามูไร</a></li>
-                        <li><a href="#">28mm สงครามศาสนา</a></li>
-                        <li><a href="#">28mm เรอเนซองส์</a></li>
-                        <li><a href="#">28mm สงครามสามสิบปี</a></li>
-                        <li><a href="#">28mm สงครามกลางเมืองอังกฤษ</a></li>
-                        <li><a href="#">28mm นโปเลียน</a></li>
-                        <li><a href="#">Black Seas</a></li>
-                        <li><a href="#">28mm สงครามโลกครั้งที่ 1</a></li>
-                        <li><a href="#">28mm สงครามโลกครั้งที่ 2</a></li>
-                        <li><a href="#">Bolt Action</a></li>
-                        <li><a href="#">28mm เวียดนาม</a></li>
-                        <li><a href="#">ฉาก และสถานที่</a></li>
+                        <li><a href="#"><span data-th="28mm โบราณ" data-en="28mm Ancient">28mm โบราณ</span></a></li>
+                        <li><a href="#"><span data-th="28mm ยุคมืด" data-en="28mm Dark Ages">28mm ยุคมืด</span></a></li>
+                        <li><a href="#"><span data-th="SAGA ฉบับที่ 2" data-en="SAGA 2nd Edition">SAGA ฉบับที่ 2</span></a></li>
+                        <li><a href="#"><span data-th="28mm ยุคกลาง" data-en="28mm Medieval">28mm ยุคกลาง</span></a></li>
+                        <li><a href="#"><span data-th="28mm ซามูไร" data-en="28mm Samurai">28mm ซามูไร</span></a></li>
+                        <li><a href="#"><span data-th="28mm สงครามศาสนา" data-en="28mm Religious Wars">28mm สงครามศาสนา</span></a></li>
+                        <li><a href="#"><span data-th="28mm เรอเนซองส์" data-en="28mm Renaissance">28mm เรอเนซองส์</span></a></li>
+                        <li><a href="#"><span data-th="28mm สงครามสามสิบปี" data-en="28mm Thirty Years War">28mm สงครามสามสิบปี</span></a></li>
+                        <li><a href="#"><span data-th="28mm สงครามกลางเมืองอังกฤษ" data-en="28mm English Civil War">28mm สงครามกลางเมืองอังกฤษ</span></a></li>
+                        <li><a href="#"><span data-th="28mm นโปเลียน" data-en="28mm Napoleonic">28mm นโปเลียน</span></a></li>
+                        <li><a href="#"><span data-th="Black Seas" data-en="Black Seas">Black Seas</span></a></li>
+                        <li><a href="#"><span data-th="28mm สงครามโลกครั้งที่ 1" data-en="28mm World War 1">28mm สงครามโลกครั้งที่ 1</span></a></li>
+                        <li><a href="#"><span data-th="28mm สงครามโลกครั้งที่ 2" data-en="28mm World War 2">28mm สงครามโลกครั้งที่ 2</span></a></li>
+                        <li><a href="#"><span data-th="Bolt Action" data-en="Bolt Action">Bolt Action</span></a></li>
+                        <li><a href="#"><span data-th="28mm เวียดนาม" data-en="28mm Vietnam">28mm เวียดนาม</span></a></li>
+                        <li><a href="#"><span data-th="ฉาก และสถานที่" data-en="Scenery & Terrain">ฉาก และสถานที่</span></a></li>
                     </ul>
                 </div>
 
                 <div class="category-section">
-                    <h3 class="section-title">Sci-Fi & Fantasy</h3>
+                    <h3 class="section-title collapsible-title">
+                        <span data-th="Sci-Fi & Fantasy" data-en="Sci-Fi & Fantasy">Sci-Fi & Fantasy</span>
+                        <i class="fas fa-chevron-down toggle-icon"></i>
+                    </h3>
                     <ul class="category-list">
-                        <li><a href="#">Konflikt '47</a></li>
-                        <li><a href="#">โมเดล Fantasy/SciFi</a></li>
-                        <li><a href="#">Games Workshop</a></li>
-                        <li><a href="#">Frostgrave</a></li>
-                        <li><a href="#">Stargrave</a></li>
-                        <li><a href="#">The Silver Bayonet</a></li>
-                        <li><a href="#">Oathmark</a></li>
-                        <li><a href="#">Gaslands Refuelled</a></li>
-                        <li><a href="#">Warlords of Erehwon</a></li>
+                        <li><a href="#"><span data-th="Konflikt '47" data-en="Konflikt '47">Konflikt '47</span></a></li>
+                        <li><a href="#"><span data-th="โมเดล Fantasy/SciFi" data-en="Fantasy/SciFi Miniatures">โมเดล Fantasy/SciFi</span></a></li>
+                        <li><a href="#"><span data-th="Games Workshop" data-en="Games Workshop">Games Workshop</span></a></li>
+                        <li><a href="#"><span data-th="Frostgrave" data-en="Frostgrave">Frostgrave</span></a></li>
+                        <li><a href="#"><span data-th="Stargrave" data-en="Stargrave">Stargrave</span></a></li>
+                        <li><a href="#"><span data-th="The Silver Bayonet" data-en="The Silver Bayonet">The Silver Bayonet</span></a></li>
+                        <li><a href="#"><span data-th="Oathmark" data-en="Oathmark">Oathmark</span></a></li>
+                        <li><a href="#"><span data-th="Gaslands Refuelled" data-en="Gaslands Refuelled">Gaslands Refuelled</span></a></li>
+                        <li><a href="#"><span data-th="Warlords of Erehwon" data-en="Warlords of Erehwon">Warlords of Erehwon</span></a></li>
                     </ul>
                 </div>
 
                 <div class="category-section">
-                    <h3 class="section-title">EPIC Historical</h3>
+                    <h3 class="section-title collapsible-title">
+                        <span data-th="EPIC Historical" data-en="EPIC Historical">EPIC Historical</span>
+                        <i class="fas fa-chevron-down toggle-icon"></i>
+                    </h3>
                     <ul class="category-list">
-                        <li><a href="#">EPIC ACW</a></li>
-                        <li><a href="#">EPIC Waterloo</a></li>
-                        <li><a href="#">EPIC Pike & Shotte</a></li>
-                        <li><a href="#">EPIC Hail Caesar</a></li>
-                        <li><a href="#">EPIC Revolution!</a></li>
+                        <li><a href="#"><span data-th="EPIC ACW" data-en="EPIC ACW">EPIC ACW</span></a></li>
+                        <li><a href="#"><span data-th="EPIC Waterloo" data-en="EPIC Waterloo">EPIC Waterloo</span></a></li>
+                        <li><a href="#"><span data-th="EPIC Pike & Shotte" data-en="EPIC Pike & Shotte">EPIC Pike & Shotte</span></a></li>
+                        <li><a href="#"><span data-th="EPIC Hail Caesar" data-en="EPIC Hail Caesar">EPIC Hail Caesar</span></a></li>
+                        <li><a href="#"><span data-th="EPIC Revolution!" data-en="EPIC Revolution!">EPIC Revolution!</span></a></li>
                     </ul>
                 </div>
 
                 <div class="category-section">
-                    <h3 class="section-title">15mm Miniatures</h3>
+                    <h3 class="section-title collapsible-title">
+                        <span data-th="15mm Miniatures" data-en="15mm Miniatures">15mm Miniatures</span>
+                        <i class="fas fa-chevron-down toggle-icon"></i>
+                    </h3>
                     <ul class="category-list">
-                        <li><a href="#">15mm WW2 Flames of War</a></li>
-                        <li><a href="#">15mm Team Yankee</a></li>
-                        <li><a href="#">15mm Terrain</a></li>
+                        <li><a href="#"><span data-th="15mm WW2 Flames of War" data-en="15mm WW2 Flames of War">15mm WW2 Flames of War</span></a></li>
+                        <li><a href="#"><span data-th="15mm Team Yankee" data-en="15mm Team Yankee">15mm Team Yankee</span></a></li>
+                        <li><a href="#"><span data-th="15mm ฉากและสถานที่" data-en="15mm Terrain">15mm ฉากและสถานที่</span></a></li>
                     </ul>
                 </div>
 
                 <div class="category-section">
-                    <h3 class="section-title">สีและอุปกรณ์</h3>
+                    <h3 class="section-title collapsible-title">
+                        <span data-th="สีและอุปกรณ์" data-en="Paints & Supplies">สีและอุปกรณ์</span>
+                        <i class="fas fa-chevron-down toggle-icon"></i>
+                    </h3>
                     <ul class="category-list">
-                        <li><a href="#">สี</a></li>
-                        <li><a href="#">แปรงทาสี</a></li>
-                        <li><a href="#">คู่มือการทาสี</a></li>
-                        <li><a href="#">ฐานโมเดลพลาสติก</a></li>
-                        <li><a href="#">กาวและดินน้ำมัน</a></li>
-                        <li><a href="#">เครื่องมือและอุปกรณ์</a></li>
-                        <li><a href="#">วัสดุตกแต่งฐาน</a></li>
-                        <li><a href="#">อุปกรณ์เสริมเกม</a></li>
+                        <li><a href="#"><span data-th="สี" data-en="Paints">สี</span></a></li>
+                        <li><a href="#"><span data-th="แปรงทาสี" data-en="Brushes">แปรงทาสี</span></a></li>
+                        <li><a href="#"><span data-th="คู่มือการทาสี" data-en="Painting Guides">คู่มือการทาสี</span></a></li>
+                        <li><a href="#"><span data-th="ฐานโมเดลพลาสติก" data-en="Plastic Bases">ฐานโมเดลพลาสติก</span></a></li>
+                        <li><a href="#"><span data-th="กาวและดินน้ำมัน" data-en="Glues & Putty">กาวและดินน้ำมัน</span></a></li>
+                        <li><a href="#"><span data-th="เครื่องมือและอุปกรณ์" data-en="Tools & Equipment">เครื่องมือและอุปกรณ์</span></a></li>
+                        <li><a href="#"><span data-th="วัสดุตกแต่งฐาน" data-en="Basing Materials">วัสดุตกแต่งฐาน</span></a></li>
+                        <li><a href="#"><span data-th="อุปกรณ์เสริมเกม" data-en="Gaming Accessories">อุปกรณ์เสริมเกม</span></a></li>
                     </ul>
+                </div>
                 </div>
             </aside>
 
@@ -149,7 +151,7 @@
                     <div class="search-box">
                         <i class="fas fa-search"></i>
                         <input type="text" placeholder="ค้นหาโมเดล, อุปกรณ์, หรือแบรนด์..." data-placeholder-th="ค้นหาโมเดล, อุปกรณ์, หรือแบรนด์..." data-placeholder-en="Search for miniatures, supplies, or brands...">
-                        <button class="search-btn" data-th="ค้นหา" data-en="Search">ค้นหา</button>
+                        <button class="search-btn"><span data-th="ค้นหา" data-en="Search">ค้นหา</span></button>
                     </div>
                 </div>
 
@@ -252,8 +254,8 @@
                                     <i class="fas fa-star-half-alt"></i>
                                     <span>(4.5)</span>
                                 </div>
-                                <h4>Army Painter Warpaints - Speedpaint Starter Set 2.0</h4>
-                                <p class="price">฿2,400</p>
+                                <h4><span data-th="Army Painter Warpaints - Speedpaint Starter Set 2.0" data-en="Army Painter Warpaints - Speedpaint Starter Set 2.0">Army Painter Warpaints - Speedpaint Starter Set 2.0</span></h4>
+                                <p class="price"><span data-th="฿2,400" data-en="THB 2,400">฿2,400</span></p>
                                 <button class="btn-cart" data-th="ใส่ตะกร้า" data-en="Add to Cart"><i class="fas fa-shopping-cart"></i> <span data-th="ใส่ตะกร้า" data-en="Add to Cart">ใส่ตะกร้า</span></button>
                             </div>
                         </div>
@@ -272,8 +274,8 @@
                                     <i class="far fa-star"></i>
                                     <span>(4.0)</span>
                                 </div>
-                                <h4>Army Painter - Monster Chipping Brush Set</h4>
-                                <p class="price">฿420</p>
+                                <h4><span data-th="Army Painter - ชุดแปรง Monster Chipping" data-en="Army Painter - Monster Chipping Brush Set">Army Painter - ชุดแปรง Monster Chipping</span></h4>
+                                <p class="price"><span data-th="฿420" data-en="THB 420">฿420</span></p>
                                 <button class="btn-cart" data-th="ใส่ตะกร้า" data-en="Add to Cart"><i class="fas fa-shopping-cart"></i> <span data-th="ใส่ตะกร้า" data-en="Add to Cart">ใส่ตะกร้า</span></button>
                             </div>
                         </div>
@@ -292,8 +294,8 @@
                                     <i class="fas fa-star"></i>
                                     <span>(5.0)</span>
                                 </div>
-                                <h4>Konflikt '47 - British Commonwealth Cerberus Squad</h4>
-                                <p class="price">฿1,125</p>
+                                <h4><span data-th="Konflikt '47 - British Commonwealth Cerberus Squad" data-en="Konflikt '47 - British Commonwealth Cerberus Squad">Konflikt '47 - British Commonwealth Cerberus Squad</span></h4>
+                                <p class="price"><span data-th="฿1,125" data-en="THB 1,125">฿1,125</span></p>
                                 <button class="btn-cart" data-th="ใส่ตะกร้า" data-en="Add to Cart"><i class="fas fa-shopping-cart"></i> <span data-th="ใส่ตะกร้า" data-en="Add to Cart">ใส่ตะกร้า</span></button>
                             </div>
                         </div>
@@ -314,8 +316,8 @@
                                     <i class="fas fa-star-half-alt"></i>
                                     <span>(4.5)</span>
                                 </div>
-                                <h4>Army Painter Warpaints Fanatic - Most Wanted Paint Set</h4>
-                                <p class="price">฿4,800</p>
+                                <h4><span data-th="Army Painter Warpaints Fanatic - ชุดสี Most Wanted" data-en="Army Painter Warpaints Fanatic - Most Wanted Paint Set">Army Painter Warpaints Fanatic - ชุดสี Most Wanted</span></h4>
+                                <p class="price"><span data-th="฿4,800" data-en="THB 4,800">฿4,800</span></p>
                                 <button class="btn-cart" data-th="ใส่ตะกร้า" data-en="Add to Cart"><i class="fas fa-shopping-cart"></i> <span data-th="ใส่ตะกร้า" data-en="Add to Cart">ใส่ตะกร้า</span></button>
                             </div>
                         </div>
@@ -334,8 +336,8 @@
                                     <i class="far fa-star"></i>
                                     <span>(4.2)</span>
                                 </div>
-                                <h4>Army Painter - Masterclass Drybrush Set</h4>
-                                <p class="price">฿1,200</p>
+                                <h4><span data-th="Army Painter - ชุดแปรง Masterclass Drybrush" data-en="Army Painter - Masterclass Drybrush Set">Army Painter - ชุดแปรง Masterclass Drybrush</span></h4>
+                                <p class="price"><span data-th="฿1,200" data-en="THB 1,200">฿1,200</span></p>
                                 <button class="btn-cart" data-th="ใส่ตะกร้า" data-en="Add to Cart"><i class="fas fa-shopping-cart"></i> <span data-th="ใส่ตะกร้า" data-en="Add to Cart">ใส่ตะกร้า</span></button>
                             </div>
                         </div>
@@ -354,8 +356,8 @@
                                     <i class="fas fa-star"></i>
                                     <span>(5.0)</span>
                                 </div>
-                                <h4>The Silver Bayonet Rulebook</h4>
-                                <p class="price">฿2,250</p>
+                                <h4><span data-th="หนังสือกฎเกม The Silver Bayonet" data-en="The Silver Bayonet Rulebook">หนังสือกฎเกม The Silver Bayonet</span></h4>
+                                <p class="price"><span data-th="฿2,250" data-en="THB 2,250">฿2,250</span></p>
                                 <button class="btn-cart" data-th="ใส่ตะกร้า" data-en="Add to Cart"><i class="fas fa-shopping-cart"></i> <span data-th="ใส่ตะกร้า" data-en="Add to Cart">ใส่ตะกร้า</span></button>
                             </div>
                         </div>
@@ -370,53 +372,53 @@
                     <div class="brands-grid">
                         <div class="brands-column">
                             <ul>
-                                <li>• Warlord Games</li>
-                                <li>• Bolt Action</li>
-                                <li>• Black Powder</li>
-                                <li>• Hail Caesar</li>
-                                <li>• Pike & Shotte</li>
-                                <li>• Black Seas</li>
-                                <li>• Victory at Sea</li>
-                                <li>• Blood Red Skies</li>
-                                <li>• Perry Miniatures</li>
-                                <li>• Fireforge Games</li>
-                                <li>• Gripping Beast Plastics</li>
-                                <li>• Victrix Miniatures</li>
-                                <li>• Wargames Atlantic</li>
+                                <li data-th="• Warlord Games" data-en="• Warlord Games">• Warlord Games</li>
+                                <li data-th="• Bolt Action" data-en="• Bolt Action">• Bolt Action</li>
+                                <li data-th="• Black Powder" data-en="• Black Powder">• Black Powder</li>
+                                <li data-th="• Hail Caesar" data-en="• Hail Caesar">• Hail Caesar</li>
+                                <li data-th="• Pike & Shotte" data-en="• Pike & Shotte">• Pike & Shotte</li>
+                                <li data-th="• Black Seas" data-en="• Black Seas">• Black Seas</li>
+                                <li data-th="• Victory at Sea" data-en="• Victory at Sea">• Victory at Sea</li>
+                                <li data-th="• Blood Red Skies" data-en="• Blood Red Skies">• Blood Red Skies</li>
+                                <li data-th="• Perry Miniatures" data-en="• Perry Miniatures">• Perry Miniatures</li>
+                                <li data-th="• Fireforge Games" data-en="• Fireforge Games">• Fireforge Games</li>
+                                <li data-th="• Gripping Beast Plastics" data-en="• Gripping Beast Plastics">• Gripping Beast Plastics</li>
+                                <li data-th="• Victrix Miniatures" data-en="• Victrix Miniatures">• Victrix Miniatures</li>
+                                <li data-th="• Wargames Atlantic" data-en="• Wargames Atlantic">• Wargames Atlantic</li>
                             </ul>
                         </div>
                         
                         <div class="brands-column">
                             <ul>
-                                <li>• The Silver Bayonet</li>
-                                <li>• Flames of War</li>
-                                <li>• WWIII Team Yankee</li>
-                                <li>• Frostgrave</li>
-                                <li>• Stargrave</li>
-                                <li>• Rubicon Models</li>
-                                <li>• Battletech</li>
-                                <li>• Oathmark</li>
-                                <li>• Gaslands Refuelled</li>
-                                <li>• SAGA</li>
-                                <li>• SPQR</li>
-                                <li>• Games Workshop</li>
-                                <li>• Warhammer: 40,000</li>
+                                <li data-th="• The Silver Bayonet" data-en="• The Silver Bayonet">• The Silver Bayonet</li>
+                                <li data-th="• Flames of War" data-en="• Flames of War">• Flames of War</li>
+                                <li data-th="• WWIII Team Yankee" data-en="• WWIII Team Yankee">• WWIII Team Yankee</li>
+                                <li data-th="• Frostgrave" data-en="• Frostgrave">• Frostgrave</li>
+                                <li data-th="• Stargrave" data-en="• Stargrave">• Stargrave</li>
+                                <li data-th="• Rubicon Models" data-en="• Rubicon Models">• Rubicon Models</li>
+                                <li data-th="• Battletech" data-en="• Battletech">• Battletech</li>
+                                <li data-th="• Oathmark" data-en="• Oathmark">• Oathmark</li>
+                                <li data-th="• Gaslands Refuelled" data-en="• Gaslands Refuelled">• Gaslands Refuelled</li>
+                                <li data-th="• SAGA" data-en="• SAGA">• SAGA</li>
+                                <li data-th="• SPQR" data-en="• SPQR">• SPQR</li>
+                                <li data-th="• Games Workshop" data-en="• Games Workshop">• Games Workshop</li>
+                                <li data-th="• Warhammer: 40,000" data-en="• Warhammer: 40,000">• Warhammer: 40,000</li>
                             </ul>
                         </div>
                         
                         <div class="brands-column">
                             <ul>
-                                <li>• Osprey Publishing</li>
-                                <li>• Wargames Illustrated</li>
-                                <li>• The Army Painter</li>
-                                <li>• Vallejo Acrylic Paints</li>
-                                <li>• Vallejo Model Color</li>
-                                <li>• Vallejo Game Color</li>
-                                <li>• Citadel Color</li>
-                                <li>• Gamers Grass</li>
-                                <li>• Scale75 Paints</li>
-                                <li>• Little Big Man Studios</li>
-                                <li>• เครื่องมือและอุปกรณ์</li>
+                                <li data-th="• Osprey Publishing" data-en="• Osprey Publishing">• Osprey Publishing</li>
+                                <li data-th="• Wargames Illustrated" data-en="• Wargames Illustrated">• Wargames Illustrated</li>
+                                <li data-th="• The Army Painter" data-en="• The Army Painter">• The Army Painter</li>
+                                <li data-th="• สี Vallejo" data-en="• Vallejo Acrylic Paints">• Vallejo Acrylic Paints</li>
+                                <li data-th="• Vallejo Model Color" data-en="• Vallejo Model Color">• Vallejo Model Color</li>
+                                <li data-th="• Vallejo Game Color" data-en="• Vallejo Game Color">• Vallejo Game Color</li>
+                                <li data-th="• Citadel Color" data-en="• Citadel Color">• Citadel Color</li>
+                                <li data-th="• Gamers Grass" data-en="• Gamers Grass">• Gamers Grass</li>
+                                <li data-th="• Scale75 Paints" data-en="• Scale75 Paints">• Scale75 Paints</li>
+                                <li data-th="• Little Big Man Studios" data-en="• Little Big Man Studios">• Little Big Man Studios</li>
+                                <li data-th="• เครื่องมือและอุปกรณ์" data-en="• Tools & Supplies">• เครื่องมือและอุปกรณ์</li>
                             </ul>
                         </div>
                     </div>
@@ -428,6 +430,20 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
+            <!-- Navigation Menu -->
+            <nav class="footer-nav">
+                <ul class="footer-nav-menu">
+                    <li><a href="#"><i class="fas fa-home"></i> <span data-th="หน้าแรก" data-en="Home">หน้าแรก</span></a></li>
+                    <li><a href="#"><i class="fas fa-truck"></i> <span data-th="ข้อมูลการจัดส่ง" data-en="Shipping">ข้อมูลการจัดส่ง</span></a></li>
+                    <li><a href="#"><i class="fas fa-envelope"></i> <span data-th="ติดต่อเรา" data-en="Contact Us">ติดต่อเรา</span></a></li>
+                    <li><a href="#"><i class="fas fa-info-circle"></i> <span data-th="เกี่ยวกับเรา" data-en="About Us">เกี่ยวกับเรา</span></a></li>
+                    <li><a href="#"><i class="fas fa-question-circle"></i> <span data-th="คำถามที่พบบ่อย" data-en="FAQ">คำถามที่พบบ่อย</span></a></li>
+                    <li><a href="#"><i class="fas fa-user"></i> <span data-th="บัญชีของคุณ" data-en="Your Account">บัญชีของคุณ</span></a></li>
+                </ul>
+            </nav>
+            
+            <div class="footer-divider"></div>
+            
             <div class="footer-links">
                 <a href="#" data-th="เกี่ยวกับเรา" data-en="About Us">เกี่ยวกับเรา</a> |
                 <a href="#" data-th="นโยบายความเป็นส่วนตัว" data-en="Privacy Policy">นโยบายความเป็นส่วนตัว</a> |
@@ -521,6 +537,74 @@
             // Smooth transitions for text
             document.querySelectorAll('[data-th][data-en]').forEach(el => {
                 el.style.transition = 'opacity 0.3s ease, transform 0.3s ease';
+            });
+
+            // Sidebar toggle for mobile
+            const sidebarToggle = document.querySelector('.sidebar-toggle');
+            const sidebar = document.querySelector('.sidebar');
+            const sidebarContent = document.querySelector('.sidebar-content');
+            
+            if (sidebarToggle) {
+                sidebarToggle.addEventListener('click', () => {
+                    sidebar.classList.toggle('sidebar-open');
+                    const icon = sidebarToggle.querySelector('i');
+                    if (sidebar.classList.contains('sidebar-open')) {
+                        icon.classList.remove('fa-bars');
+                        icon.classList.add('fa-times');
+                    } else {
+                        icon.classList.remove('fa-times');
+                        icon.classList.add('fa-bars');
+                    }
+                });
+            }
+
+            // Collapsible category sections
+            const collapsibleTitles = document.querySelectorAll('.collapsible-title');
+            
+            // On mobile, collapse all sections by default
+            if (window.innerWidth <= 768) {
+                document.querySelectorAll('.category-section').forEach(section => {
+                    const list = section.querySelector('.category-list');
+                    const icon = section.querySelector('.toggle-icon');
+                    if (list && icon) {
+                        section.classList.add('collapsed');
+                        list.style.maxHeight = '0';
+                        icon.style.transform = 'rotate(-90deg)';
+                    }
+                });
+            }
+            
+            collapsibleTitles.forEach(title => {
+                title.addEventListener('click', () => {
+                    const categorySection = title.parentElement;
+                    const categoryList = categorySection.querySelector('.category-list');
+                    const toggleIcon = title.querySelector('.toggle-icon');
+                    
+                    categorySection.classList.toggle('collapsed');
+                    
+                    if (categorySection.classList.contains('collapsed')) {
+                        categoryList.style.maxHeight = '0';
+                        toggleIcon.style.transform = 'rotate(-90deg)';
+                    } else {
+                        categoryList.style.maxHeight = categoryList.scrollHeight + 'px';
+                        toggleIcon.style.transform = 'rotate(0deg)';
+                    }
+                });
+            });
+                });
+                });
+            });
+
+            // Close sidebar when clicking outside on mobile
+            document.addEventListener('click', (e) => {
+                if (window.innerWidth <= 768) {
+                    if (!sidebar.contains(e.target) && sidebar.classList.contains('sidebar-open')) {
+                        sidebar.classList.remove('sidebar-open');
+                        const icon = sidebarToggle.querySelector('i');
+                        icon.classList.remove('fa-times');
+                        icon.classList.add('fa-bars');
+                    }
+                }
             });
         });
     </script>
