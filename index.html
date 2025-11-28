@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Siam Miniatures - โมเดลและอุปกรณ์จำลอง</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <div class="header-top">
+            <div class="container">
+                <div class="logo">
+                    <div class="logo-icon"><i class="fas fa-chess-knight"></i></div>
+                    <div class="logo-text">
+                        <h1>SIAM MINIATURES</h1>
+                        <p class="tagline" data-th="โมเดลและอุปกรณ์จำลองคุณภาพสูง" data-en="Premium Wargame Miniatures & Hobby Supplies">โมเดลและอุปกรณ์จำลองคุณภาพสูง</p>
+                    </div>
+                </div>
+                <div class="header-right">
+                    <div class="lang-switcher">
+                        <button class="lang-btn active" data-lang="th"><i class="fas fa-language"></i> ไทย</button>
+                        <button class="lang-btn" data-lang="en"><i class="fas fa-globe"></i> EN</button>
+                    </div>
+                    <div class="contact-info">
+                        <p><i class="fas fa-phone-alt"></i> <span data-th="โทรสอบถาม" data-en="Call Us">โทรสอบถาม</span>: <strong>02-XXX-XXXX</strong></p>
+                        <p><i class="fas fa-clock"></i> <span data-th="จันทร์-ศุกร์ 9:00-16:00" data-en="Mon-Fri 9:00-16:00">จันทร์-ศุกร์ 9:00-16:00</span></p>
+                    </div>
+                    <div class="cart-info">
+                        <div class="cart-icon"><i class="fas fa-shopping-cart"></i><span class="cart-badge">0</span></div>
+                        <div class="cart-details">
+                            <span class="cart-count" data-th="0 สินค้า" data-en="0 Items">0 สินค้า</span>
+                            <span class="cart-price">฿0.00</span>
+                        </div>
+                        <a href="#" class="cart-link"><i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Navigation Bar -->
+        <nav class="navbar">
+            <div class="container">
+                <ul class="nav-menu">
+                    <li><a href="#"><i class="fas fa-home"></i> <span data-th="หน้าแรก" data-en="Home">หน้าแรก</span></a></li>
+                    <li><a href="#"><i class="fas fa-truck"></i> <span data-th="ข้อมูลการจัดส่ง" data-en="Shipping">ข้อมูลการจัดส่ง</span></a></li>
+                    <li><a href="#"><i class="fas fa-envelope"></i> <span data-th="ติดต่อเรา" data-en="Contact Us">ติดต่อเรา</span></a></li>
+                    <li><a href="#"><i class="fas fa-info-circle"></i> <span data-th="เกี่ยวกับเรา" data-en="About Us">เกี่ยวกับเรา</span></a></li>
+                    <li><a href="#"><i class="fas fa-question-circle"></i> <span data-th="คำถามที่พบบ่อย" data-en="FAQ">คำถามที่พบบ่อย</span></a></li>
+                    <li><a href="#"><i class="fas fa-user"></i> <span data-th="บัญชีของคุณ" data-en="Your Account">บัญชีของคุณ</span></a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content Area -->
+    <div class="main-wrapper">
+        <div class="container">
+            <!-- Sidebar Categories -->
+            <aside class="sidebar">
+                <div class="category-section">
+                    <h3 class="section-title"><i class="fas fa-chess-rook"></i> <span data-th="โมเดลสงคราม" data-en="Wargame Miniatures">โมเดลสงคราม</span></h3>
+                    <ul class="category-list">
+                        <li><a href="#"><i class="fas fa-star"></i> <span data-th="สินค้าใหม่" data-en="New Releases">สินค้าใหม่</span></a></li>
+                        <li><a href="#"><i class="fas fa-gift"></i> <span data-th="บัตรของขวัญ" data-en="Gift Vouchers">บัตรของขวัญ</span></a></li>
+                        <li><a href="#" class="special-item"><i class="fas fa-fire"></i> <span data-th="โปรโมชั่น !!" data-en="Specials !!">โปรโมชั่น !!</span></a></li>
+                        <li><a href="#"><i class="fas fa-box"></i> <span data-th="สั่งจองล่วงหน้า" data-en="Preorders">สั่งจองล่วงหน้า</span></a></li>
+                        <li><a href="#"><i class="fas fa-book"></i> <span data-th="หนังสือกฎเกม" data-en="Wargame Rule Books">หนังสือกฎเกม</span></a></li>
+                        <li><a href="#"><i class="fas fa-users"></i> <span data-th="เซตกองทัพ" data-en="Army Deals">เซตกองทัพ</span></a></li>
+                        <li class="category-divider"></li>
+                        <li><a href="#">28mm โบราณ</a></li>
+                        <li><a href="#">28mm ยุคมืด</a></li>
+                        <li><a href="#">SAGA ฉบับที่ 2</a></li>
+                        <li><a href="#">28mm ยุคกลาง</a></li>
+                        <li><a href="#">28mm ซามูไร</a></li>
+                        <li><a href="#">28mm สงครามศาสนา</a></li>
+                        <li><a href="#">28mm เรอเนซองส์</a></li>
+                        <li><a href="#">28mm สงครามสามสิบปี</a></li>
+                        <li><a href="#">28mm สงครามกลางเมืองอังกฤษ</a></li>
+                        <li><a href="#">28mm นโปเลียน</a></li>
+                        <li><a href="#">Black Seas</a></li>
+                        <li><a href="#">28mm สงครามโลกครั้งที่ 1</a></li>
+                        <li><a href="#">28mm สงครามโลกครั้งที่ 2</a></li>
+                        <li><a href="#">Bolt Action</a></li>
+                        <li><a href="#">28mm เวียดนาม</a></li>
+                        <li><a href="#">ฉาก และสถานที่</a></li>
+                    </ul>
+                </div>
+
+                <div class="category-section">
+                    <h3 class="section-title">Sci-Fi & Fantasy</h3>
+                    <ul class="category-list">
+                        <li><a href="#">Konflikt '47</a></li>
+                        <li><a href="#">โมเดล Fantasy/SciFi</a></li>
+                        <li><a href="#">Games Workshop</a></li>
+                        <li><a href="#">Frostgrave</a></li>
+                        <li><a href="#">Stargrave</a></li>
+                        <li><a href="#">The Silver Bayonet</a></li>
+                        <li><a href="#">Oathmark</a></li>
+                        <li><a href="#">Gaslands Refuelled</a></li>
+                        <li><a href="#">Warlords of Erehwon</a></li>
+                    </ul>
+                </div>
+
+                <div class="category-section">
+                    <h3 class="section-title">EPIC Historical</h3>
+                    <ul class="category-list">
+                        <li><a href="#">EPIC ACW</a></li>
+                        <li><a href="#">EPIC Waterloo</a></li>
+                        <li><a href="#">EPIC Pike & Shotte</a></li>
+                        <li><a href="#">EPIC Hail Caesar</a></li>
+                        <li><a href="#">EPIC Revolution!</a></li>
+                    </ul>
+                </div>
+
+                <div class="category-section">
+                    <h3 class="section-title">15mm Miniatures</h3>
+                    <ul class="category-list">
+                        <li><a href="#">15mm WW2 Flames of War</a></li>
+                        <li><a href="#">15mm Team Yankee</a></li>
+                        <li><a href="#">15mm Terrain</a></li>
+                    </ul>
+                </div>
+
+                <div class="category-section">
+                    <h3 class="section-title">สีและอุปกรณ์</h3>
+                    <ul class="category-list">
+                        <li><a href="#">สี</a></li>
+                        <li><a href="#">แปรงทาสี</a></li>
+                        <li><a href="#">คู่มือการทาสี</a></li>
+                        <li><a href="#">ฐานโมเดลพลาสติก</a></li>
+                        <li><a href="#">กาวและดินน้ำมัน</a></li>
+                        <li><a href="#">เครื่องมือและอุปกรณ์</a></li>
+                        <li><a href="#">วัสดุตกแต่งฐาน</a></li>
+                        <li><a href="#">อุปกรณ์เสริมเกม</a></li>
+                    </ul>
+                </div>
+            </aside>
+
+            <!-- Main Content -->
+            <main class="content">
+                <!-- Search Bar -->
+                <div class="search-section">
+                    <div class="search-box">
+                        <i class="fas fa-search"></i>
+                        <input type="text" placeholder="ค้นหาโมเดล, อุปกรณ์, หรือแบรนด์..." data-placeholder-th="ค้นหาโมเดล, อุปกรณ์, หรือแบรนด์..." data-placeholder-en="Search for miniatures, supplies, or brands...">
+                        <button class="search-btn" data-th="ค้นหา" data-en="Search">ค้นหา</button>
+                    </div>
+                </div>
+
+                <!-- Featured Banner -->
+                <div class="banner-section">
+                    <div class="banner-wrapper">
+                        <img src="https://via.placeholder.com/800x300/4a5568/ffffff?text=Latest+Releases" alt="สินค้าล่าสุด" class="banner-img">
+                        <div class="banner-overlay">
+                            <h2 data-th="คอลเลกชั่นใหม่ล่าสุด" data-en="Latest Collection">คอลเลกชั่นใหม่ล่าสุด</h2>
+                            <p data-th="สินค้าใหม่มาแล้ว พร้อมส่ง!" data-en="New arrivals ready to ship!">สินค้าใหม่มาแล้ว พร้อมส่ง!</p>
+                            <button class="banner-btn" data-th="ดูเลย" data-en="Shop Now">ดูเลย</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Featured Categories -->
+                <div class="featured-categories">
+                    <div class="featured-card">
+                        <div class="featured-frame">
+                            <img src="https://via.placeholder.com/280x180/4a5568/d4af37?text=Historical" alt="สังจองล่วงหน้า">
+                            <div class="featured-label" data-th="สังจองล่วงหน้า" data-en="Historical Miniatures">สังจองล่วงหน้า</div>
+                        </div>
+                    </div>
+                    <div class="featured-card">
+                        <div class="featured-frame">
+                            <img src="https://via.placeholder.com/280x180/3d4547/d4af37?text=Medieval" alt="หนังสือกฎเกม">
+                            <div class="featured-label" data-th="หนังสือกฎเกม" data-en="Medieval Miniatures">หนังสือกฎเกม</div>
+                        </div>
+                    </div>
+                    <div class="featured-card">
+                        <div class="featured-frame">
+                            <img src="https://via.placeholder.com/280x180/2d3436/d4af37?text=Sci-Fi" alt="Sci-Fi">
+                            <div class="featured-label">Sci-Fi & Fantasy</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="featured-categories">
+                    <div class="featured-card">
+                        <div class="featured-frame">
+                            <img src="https://via.placeholder.com/280x180/1a1a1a/d4af37?text=Games+Workshop" alt="Games Workshop">
+                            <div class="featured-label">Games Workshop</div>
+                        </div>
+                    </div>
+                    <div class="featured-card">
+                        <div class="featured-frame">
+                            <img src="https://via.placeholder.com/280x180/4a5568/d4af37?text=Bolt+Action" alt="Bolt Action">
+                            <div class="featured-label">Bolt Action</div>
+                        </div>
+                    </div>
+                    <div class="featured-card">
+                        <div class="featured-frame">
+                            <img src="https://via.placeholder.com/280x180/3d4547/d4af37?text=SAGA" alt="SAGA">
+                            <div class="featured-label">SAGA</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="featured-categories">
+                    <div class="featured-card">
+                        <div class="featured-frame">
+                            <img src="https://via.placeholder.com/280x180/2d3436/d4af37?text=Paints" alt="สีและอุปกรณ์">
+                            <div class="featured-label" data-th="สีและอุปกรณ์" data-en="Paints & Accessories">สีและอุปกรณ์</div>
+                        </div>
+                    </div>
+                    <div class="featured-card">
+                        <div class="featured-frame">
+                            <img src="https://via.placeholder.com/280x180/1a1a1a/d4af37?text=Army+Deals" alt="เซตกองทัพ">
+                            <div class="featured-label" data-th="เซตกองทัพ" data-en="Army Deals">เซตกองทัพ</div>
+                        </div>
+                    </div>
+                    <div class="featured-card featured-card-empty">
+                        <div class="featured-frame">
+                            <div class="empty-placeholder">
+                                <i class="fas fa-plus-circle"></i>
+                                <p data-th="เพิ่มเติม" data-en="More Coming">เพิ่มเติม</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- New Products -->
+                <section class="products-section">
+                    <div class="section-header">
+                        <h2 class="section-heading"><i class="fas fa-bolt"></i> <span data-th="สินค้าล่าสุด" data-en="Latest Releases">สินค้าล่าสุด</span></h2>
+                        <a href="#" class="view-all" data-th="ดูทั้งหมด" data-en="View All">ดูทั้งหมด <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                    <div class="products-grid">
+                        <div class="product-card">
+                            <div class="product-badge" data-th="ใหม่!" data-en="New!">ใหม่!</div>
+                            <div class="product-image-wrapper">
+                                <img src="https://via.placeholder.com/350x250/6366f1/d4af37?text=Army+Painter+Set" alt="สินค้า 1" class="product-img">
+                            </div>
+                            <div class="product-info">
+                                <div class="product-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                    <span>(4.5)</span>
+                                </div>
+                                <h4>Army Painter Warpaints - Speedpaint Starter Set 2.0</h4>
+                                <p class="price">฿2,400</p>
+                                <button class="btn-cart" data-th="ใส่ตะกร้า" data-en="Add to Cart"><i class="fas fa-shopping-cart"></i> <span data-th="ใส่ตะกร้า" data-en="Add to Cart">ใส่ตะกร้า</span></button>
+                            </div>
+                        </div>
+                        
+                        <div class="product-card">
+                            <div class="product-badge" data-th="ใหม่!" data-en="New!">ใหม่!</div>
+                            <div class="product-image-wrapper">
+                                <img src="https://via.placeholder.com/350x250/8b5cf6/d4af37?text=Monster+Brush+Set" alt="สินค้า 2" class="product-img">
+                            </div>
+                            <div class="product-info">
+                                <div class="product-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <span>(4.0)</span>
+                                </div>
+                                <h4>Army Painter - Monster Chipping Brush Set</h4>
+                                <p class="price">฿420</p>
+                                <button class="btn-cart" data-th="ใส่ตะกร้า" data-en="Add to Cart"><i class="fas fa-shopping-cart"></i> <span data-th="ใส่ตะกร้า" data-en="Add to Cart">ใส่ตะกร้า</span></button>
+                            </div>
+                        </div>
+                        
+                        <div class="product-card">
+                            <div class="product-badge" data-th="ใหม่!" data-en="New!">ใหม่!</div>
+                            <div class="product-image-wrapper">
+                                <img src="https://via.placeholder.com/350x250/ec4899/d4af37?text=Cerberus+Squad" alt="สินค้า 3" class="product-img">
+                            </div>
+                            <div class="product-info">
+                                <div class="product-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <span>(5.0)</span>
+                                </div>
+                                <h4>Konflikt '47 - British Commonwealth Cerberus Squad</h4>
+                                <p class="price">฿1,125</p>
+                                <button class="btn-cart" data-th="ใส่ตะกร้า" data-en="Add to Cart"><i class="fas fa-shopping-cart"></i> <span data-th="ใส่ตะกร้า" data-en="Add to Cart">ใส่ตะกร้า</span></button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="products-grid">
+                        <div class="product-card">
+                            <div class="product-badge" data-th="ใหม่!" data-en="New!">ใหม่!</div>
+                            <div class="product-image-wrapper">
+                                <img src="https://via.placeholder.com/350x250/f59e0b/d4af37?text=Fanatic+Paint+Set" alt="สินค้า 4" class="product-img">
+                            </div>
+                            <div class="product-info">
+                                <div class="product-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                    <span>(4.5)</span>
+                                </div>
+                                <h4>Army Painter Warpaints Fanatic - Most Wanted Paint Set</h4>
+                                <p class="price">฿4,800</p>
+                                <button class="btn-cart" data-th="ใส่ตะกร้า" data-en="Add to Cart"><i class="fas fa-shopping-cart"></i> <span data-th="ใส่ตะกร้า" data-en="Add to Cart">ใส่ตะกร้า</span></button>
+                            </div>
+                        </div>
+                        
+                        <div class="product-card">
+                            <div class="product-badge" data-th="ใหม่!" data-en="New!">ใหม่!</div>
+                            <div class="product-image-wrapper">
+                                <img src="https://via.placeholder.com/350x250/10b981/d4af37?text=Drybrush+Set" alt="สินค้า 5" class="product-img">
+                            </div>
+                            <div class="product-info">
+                                <div class="product-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <span>(4.2)</span>
+                                </div>
+                                <h4>Army Painter - Masterclass Drybrush Set</h4>
+                                <p class="price">฿1,200</p>
+                                <button class="btn-cart" data-th="ใส่ตะกร้า" data-en="Add to Cart"><i class="fas fa-shopping-cart"></i> <span data-th="ใส่ตะกร้า" data-en="Add to Cart">ใส่ตะกร้า</span></button>
+                            </div>
+                        </div>
+                        
+                        <div class="product-card">
+                            <div class="product-badge" data-th="ใหม่!" data-en="New!">ใหม่!</div>
+                            <div class="product-image-wrapper">
+                                <img src="https://via.placeholder.com/350x250/ef4444/d4af37?text=Silver+Bayonet" alt="สินค้า 6" class="product-img">
+                            </div>
+                            <div class="product-info">
+                                <div class="product-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <span>(5.0)</span>
+                                </div>
+                                <h4>The Silver Bayonet Rulebook</h4>
+                                <p class="price">฿2,250</p>
+                                <button class="btn-cart" data-th="ใส่ตะกร้า" data-en="Add to Cart"><i class="fas fa-shopping-cart"></i> <span data-th="ใส่ตะกร้า" data-en="Add to Cart">ใส่ตะกร้า</span></button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- About Section -->
+                <section class="about-section">
+                    <h2 data-th="โมเดล 28mm และอีกมากมาย" data-en="28mm Miniatures and Much More">โมเดล 28mm และอีกมากมาย</h2>
+                    <p data-th="เราจัดจำหน่ายอุปกรณ์งานอดิเรก โมเดล และเกมหลากหลายประเภท เช่น:" data-en="We deal in a large range of hobby supplies, miniatures and games, such as:">เราจัดจำหน่ายอุปกรณ์งานอดิเรก โมเดล และเกมหลากหลายประเภท เช่น:</p>
+                    
+                    <div class="brands-grid">
+                        <div class="brands-column">
+                            <ul>
+                                <li>• Warlord Games</li>
+                                <li>• Bolt Action</li>
+                                <li>• Black Powder</li>
+                                <li>• Hail Caesar</li>
+                                <li>• Pike & Shotte</li>
+                                <li>• Black Seas</li>
+                                <li>• Victory at Sea</li>
+                                <li>• Blood Red Skies</li>
+                                <li>• Perry Miniatures</li>
+                                <li>• Fireforge Games</li>
+                                <li>• Gripping Beast Plastics</li>
+                                <li>• Victrix Miniatures</li>
+                                <li>• Wargames Atlantic</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="brands-column">
+                            <ul>
+                                <li>• The Silver Bayonet</li>
+                                <li>• Flames of War</li>
+                                <li>• WWIII Team Yankee</li>
+                                <li>• Frostgrave</li>
+                                <li>• Stargrave</li>
+                                <li>• Rubicon Models</li>
+                                <li>• Battletech</li>
+                                <li>• Oathmark</li>
+                                <li>• Gaslands Refuelled</li>
+                                <li>• SAGA</li>
+                                <li>• SPQR</li>
+                                <li>• Games Workshop</li>
+                                <li>• Warhammer: 40,000</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="brands-column">
+                            <ul>
+                                <li>• Osprey Publishing</li>
+                                <li>• Wargames Illustrated</li>
+                                <li>• The Army Painter</li>
+                                <li>• Vallejo Acrylic Paints</li>
+                                <li>• Vallejo Model Color</li>
+                                <li>• Vallejo Game Color</li>
+                                <li>• Citadel Color</li>
+                                <li>• Gamers Grass</li>
+                                <li>• Scale75 Paints</li>
+                                <li>• Little Big Man Studios</li>
+                                <li>• เครื่องมือและอุปกรณ์</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+            </main>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-links">
+                <a href="#" data-th="เกี่ยวกับเรา" data-en="About Us">เกี่ยวกับเรา</a> |
+                <a href="#" data-th="นโยบายความเป็นส่วนตัว" data-en="Privacy Policy">นโยบายความเป็นส่วนตัว</a> |
+                <a href="#" data-th="เงื่อนไขการใช้งาน" data-en="Terms">เงื่อนไขการใช้งาน</a> |
+                <a href="#" data-th="เข้าสู่ระบบ" data-en="Login">เข้าสู่ระบบ</a> |
+                <a href="#" data-th="ตะกร้าสินค้า" data-en="My Cart">ตะกร้าสินค้า</a> |
+                <a href="#" data-th="คำถามที่พบบ่อย" data-en="FAQ">คำถามที่พบบ่อย</a> |
+                <a href="#" data-th="แผนผังเว็บไซต์" data-en="Sitemap">แผนผังเว็บไซต์</a>
+            </div>
+            
+            <div class="footer-social">
+                <a href="#" class="social-link">Facebook</a>
+                <a href="#" class="social-link">Twitter</a>
+                <a href="#" class="social-link">Email</a>
+            </div>
+            
+            <div class="footer-copyright">
+                <p data-th="© 2025 SiamMiniatures.com สงวนลิขสิทธิ์" data-en="© 2025 SiamMiniatures.com All Rights Reserved.">© 2025 SiamMiniatures.com สงวนลิขสิทธ์</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Language Switcher with animations
+        let currentLang = 'th';
+
+        function switchLanguage(lang) {
+            currentLang = lang;
+            const elements = document.querySelectorAll('[data-th][data-en]');
+            
+            elements.forEach(el => {
+                el.style.opacity = '0';
+                el.style.transform = 'translateY(-10px)';
+                
+                setTimeout(() => {
+                    if (lang === 'th') {
+                        el.textContent = el.getAttribute('data-th');
+                    } else {
+                        el.textContent = el.getAttribute('data-en');
+                    }
+                    el.style.opacity = '1';
+                    el.style.transform = 'translateY(0)';
+                }, 150);
+            });
+
+            // Update search placeholder
+            const searchInput = document.querySelector('.search-box input');
+            if (searchInput) {
+                if (lang === 'th') {
+                    searchInput.placeholder = searchInput.getAttribute('data-placeholder-th');
+                } else {
+                    searchInput.placeholder = searchInput.getAttribute('data-placeholder-en');
+                }
+            }
+
+            // Update active button
+            document.querySelectorAll('.lang-btn').forEach(btn => {
+                btn.classList.remove('active');
+                if (btn.getAttribute('data-lang') === lang) {
+                    btn.classList.add('active');
+                }
+            });
+        }
+
+        // Add smooth scroll and animations
+        document.addEventListener('DOMContentLoaded', () => {
+            // Language switcher
+            document.querySelectorAll('.lang-btn').forEach(btn => {
+                btn.addEventListener('click', () => {
+                    switchLanguage(btn.getAttribute('data-lang'));
+                });
+            });
+
+            // Animate elements on scroll
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.opacity = '1';
+                        entry.target.style.transform = 'translateY(0)';
+                    }
+                });
+            }, { threshold: 0.1 });
+
+            document.querySelectorAll('.product-card, .featured-card').forEach(el => {
+                el.style.opacity = '0';
+                el.style.transform = 'translateY(30px)';
+                el.style.transition = 'all 0.6s ease';
+                observer.observe(el);
+            });
+
+            // Smooth transitions for text
+            document.querySelectorAll('[data-th][data-en]').forEach(el => {
+                el.style.transition = 'opacity 0.3s ease, transform 0.3s ease';
+            });
+        });
+    </script>
+</body>
+</html>
