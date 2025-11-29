@@ -16,17 +16,17 @@
         <div class="header-top">
             <div class="container">
                 <div class="logo">
-                    <div class="logo-icon"><i class="fas fa-chess-knight"></i></div>
+                    <img src="image/logo.png" alt="Siam Miniatures Logo" class="logo-image">
                     <div class="logo-text">
                         <h1>SIAM MINIATURES</h1>
-                        <p class="tagline" data-th="โมเดลและอุปกรณ์จำลองคุณภาพสูง" data-en="Premium Wargame Miniatures & Hobby Supplies">โมเดลและอุปกรณ์จำลองคุณภาพสูง</p>
+                        <p class="tagline" data-th="โมเดลและอุปกรณ์จำลองคุณภาพสูง" data-en="Premium Wargame Miniatures & Hobby Supplies">Premium Wargame Miniatures & Hobby Supplies</p>
                     </div>
                 </div>
                 <div class="header-right">
                     <div class="header-controls">
                         <div class="lang-switcher">
-                            <button class="lang-btn active" data-lang="th">ไทย</button>
-                            <button class="lang-btn" data-lang="en">EN</button>
+                            <button class="lang-btn" data-lang="th">ไทย</button>
+                            <button class="lang-btn active" data-lang="en">EN</button>
                         </div>
                         <div class="cart-info-compact">
                             <i class="fas fa-shopping-cart"></i>
@@ -539,6 +539,9 @@
                 el.style.transition = 'opacity 0.3s ease, transform 0.3s ease';
             });
 
+            // Set default language to English
+            switchLanguage('en');
+
             // Sidebar toggle for mobile
             const sidebarToggle = document.querySelector('.sidebar-toggle');
             const sidebar = document.querySelector('.sidebar');
@@ -589,9 +592,6 @@
                         categoryList.style.maxHeight = categoryList.scrollHeight + 'px';
                         toggleIcon.style.transform = 'rotate(0deg)';
                     }
-                });
-            });
-                });
                 });
             });
 

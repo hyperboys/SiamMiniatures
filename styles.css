@@ -16,6 +16,7 @@ body {
     background: #0a0a0a;
     position: relative;
     overflow-x: hidden;
+    min-height: 100vh;
 }
 
 body::before {
@@ -25,12 +26,28 @@ body::before {
     left: 0;
     right: 0;
     bottom: 0;
+    background-image: url('image/background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    opacity: 1;
+    z-index: -2;
+}
+
+body::after {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
     background: 
-        radial-gradient(circle at 20% 50%, rgba(212, 175, 55, 0.08) 0%, transparent 50%),
-        radial-gradient(circle at 80% 80%, rgba(139, 115, 85, 0.06) 0%, transparent 50%),
-        radial-gradient(circle at 40% 90%, rgba(212, 175, 55, 0.04) 0%, transparent 40%);
+        radial-gradient(circle at 20% 50%, rgba(212, 175, 55, 0.05) 0%, transparent 50%),
+        radial-gradient(circle at 80% 80%, rgba(139, 115, 85, 0.04) 0%, transparent 50%),
+        linear-gradient(180deg, rgba(10, 10, 10, 0.6) 0%, rgba(10, 10, 10, 0.7) 100%);
     pointer-events: none;
-    z-index: 0;
+    z-index: -1;
 }
 
 body > * {
@@ -57,9 +74,12 @@ body > * {
 }
 
 .header-top {
-    background: linear-gradient(135deg, rgba(45, 52, 54, 0.8) 0%, rgba(61, 69, 71, 0.8) 100%);
+    background-image: url('image/Header.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     color: #d4af37;
-    padding: 20px 0;
+    padding: 12px 0;
     border-bottom: 1px solid rgba(139, 115, 85, 0.3);
     position: relative;
 }
@@ -70,8 +90,20 @@ body > * {
     top: 0;
     left: 0;
     right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, rgba(45, 52, 54, 0.3) 0%, rgba(61, 69, 71, 0.3) 100%);
+    z-index: 0;
+}
+
+.header-top::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
     height: 1px;
     background: linear-gradient(90deg, transparent, rgba(212, 175, 55, 0.5), transparent);
+    z-index: 1;
 }
 
 .header-top .container {
@@ -79,6 +111,8 @@ body > * {
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
+    position: relative;
+    z-index: 2;
 }
 
 .logo {
@@ -87,20 +121,26 @@ body > * {
     gap: 15px;
 }
 
-.logo-icon {
-    font-size: 3rem;
-    color: #d4af37;
+.logo-image {
+    height: 140px;
+    width: auto;
     filter: drop-shadow(0 0 20px rgba(212, 175, 55, 0.6));
     animation: logoFloat 3s ease-in-out infinite;
+    transition: transform 0.3s ease;
+}
+
+.logo-image:hover {
+    transform: scale(1.05);
+    filter: drop-shadow(0 0 30px rgba(212, 175, 55, 0.8));
 }
 
 @keyframes logoFloat {
     0%, 100% { 
-        transform: translateY(0) scale(1);
+        transform: translateY(0);
         filter: drop-shadow(0 0 20px rgba(212, 175, 55, 0.6));
     }
     50% { 
-        transform: translateY(-5px) scale(1.05);
+        transform: translateY(-5px);
         filter: drop-shadow(0 0 30px rgba(212, 175, 55, 0.8));
     }
 }
@@ -111,16 +151,18 @@ body > * {
     font-weight: 900;
     letter-spacing: 3px;
     margin-bottom: 5px;
-    color: #d4af37;
-    text-shadow: 0 0 20px rgba(212, 175, 55, 0.5),
-                 2px 2px 4px rgba(0,0,0,0.5);
+    color: #ffd700;
+    text-shadow: 0 0 25px rgba(255, 215, 0, 0.6),
+                 2px 2px 6px rgba(0,0,0,0.8),
+                 0 0 10px rgba(255, 215, 0, 0.4);
 }
 
 .logo .tagline {
     font-size: 0.85rem;
-    opacity: 0.9;
-    color: #c9b382;
+    opacity: 1;
+    color: #f5f5dc;
     font-weight: 300;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.7);
 }
 
 .header-right {
@@ -133,10 +175,12 @@ body > * {
     display: flex;
     align-items: center;
     gap: 15px;
-    background: rgba(26, 26, 26, 0.6);\n    backdrop-filter: blur(10px);
-    padding: 10px 15px;
+    background: rgba(26, 26, 26, 0.6);
+    backdrop-filter: blur(10px);
+    padding: 10px 20px;
     border-radius: 50px;
     border: 1px solid rgba(139, 115, 85, 0.3);
+    flex-shrink: 0;
 }
 
 /* Language Switcher */
@@ -181,6 +225,8 @@ body > * {
     font-size: 0.9rem;
     cursor: pointer;
     transition: all 0.3s ease;
+    position: relative;
+    white-space: nowrap;
 }
 
 .cart-info-compact:hover {
@@ -188,9 +234,10 @@ body > * {
     transform: scale(1.05);
 }
 
-.cart-info-compact i {
+.cart-info-compact > i {
     font-size: 1.2rem;
     position: relative;
+    display: inline-block;
 }
 
 .cart-info-compact .cart-badge {
@@ -211,6 +258,7 @@ body > * {
 .cart-info-compact .cart-price {
     font-family: 'Orbitron', sans-serif;
     letter-spacing: 1px;
+    display: inline-block;
 }
 
 .contact-info p {
@@ -1677,6 +1725,19 @@ body > * {
     
     .container {
         padding: 0 10px;
+    }
+    
+    .logo-text h1 {
+        font-size: 1.5rem;
+        letter-spacing: 2px;
+    }
+    
+    .logo .tagline {
+        font-size: 0.65rem;
+    }
+    
+    .logo-image {
+        height: 80px;
     }
     
     .content {
