@@ -157,12 +157,22 @@
 
                 <!-- Featured Banner -->
                 <div class="banner-section">
-                    <div class="banner-wrapper">
-                        <img src="https://via.placeholder.com/800x300/4a5568/ffffff?text=Latest+Releases" alt="สินค้าล่าสุด" class="banner-img">
-                        <div class="banner-overlay">
-                            <h2 data-th="คอลเลกชั่นใหม่ล่าสุด" data-en="Latest Collection">คอลเลกชั่นใหม่ล่าสุด</h2>
-                            <p data-th="สินค้าใหม่มาแล้ว พร้อมส่ง!" data-en="New arrivals ready to ship!">สินค้าใหม่มาแล้ว พร้อมส่ง!</p>
-                            <button class="banner-btn" data-th="ดูเลย" data-en="Shop Now">ดูเลย</button>
+                    <div class="banner-slider">
+                        <div class="banner-slide active">
+                            <img src="image/Banner/ban1.png" alt="Banner 1" class="banner-img">
+                        </div>
+                        <div class="banner-slide">
+                            <img src="image/Banner/ban2.png" alt="Banner 2" class="banner-img">
+                        </div>
+                        <div class="banner-slide">
+                            <img src="image/Banner/ban3.png" alt="Banner 3" class="banner-img">
+                        </div>
+                        <button class="banner-nav prev" aria-label="Previous"><i class="fas fa-chevron-left"></i></button>
+                        <button class="banner-nav next" aria-label="Next"><i class="fas fa-chevron-right"></i></button>
+                        <div class="banner-dots">
+                            <span class="dot active" data-slide="0"></span>
+                            <span class="dot" data-slide="1"></span>
+                            <span class="dot" data-slide="2"></span>
                         </div>
                     </div>
                 </div>
@@ -594,6 +604,71 @@
                     }
                 });
             });
+
+            // Banner Slider
+            const slides = document.querySelectorAll('.banner-slide');
+            const dots = document.querySelectorAll('.banner-dots .dot');
+            const prevBtn = document.querySelector('.banner-nav.prev');
+            const nextBtn = document.querySelector('.banner-nav.next');
+            let currentSlide = 0;
+            let autoSlideInterval;
+
+            function showSlide(index) {
+                slides.forEach(slide => slide.classList.remove('active'));
+                dots.forEach(dot => dot.classList.remove('active'));
+                
+                currentSlide = (index + slides.length) % slides.length;
+                slides[currentSlide].classList.add('active');
+                dots[currentSlide].classList.add('active');
+            }
+
+            function nextSlide() {
+                showSlide(currentSlide + 1);
+            }
+
+            function prevSlide() {
+                showSlide(currentSlide - 1);
+            }
+
+            function startAutoSlide() {
+                autoSlideInterval = setInterval(nextSlide, 5000);
+            }
+
+            function stopAutoSlide() {
+                clearInterval(autoSlideInterval);
+            }
+
+            if (prevBtn && nextBtn) {
+                prevBtn.addEventListener('click', () => {
+                    prevSlide();
+                    stopAutoSlide();
+                    startAutoSlide();
+                });
+
+                nextBtn.addEventListener('click', () => {
+                    nextSlide();
+                    stopAutoSlide();
+                    startAutoSlide();
+                });
+            }
+
+            dots.forEach((dot, index) => {
+                dot.addEventListener('click', () => {
+                    showSlide(index);
+                    stopAutoSlide();
+                    startAutoSlide();
+                });
+            });
+
+            // Start auto-slide
+            startAutoSlide();
+
+            // Pause on hover
+            const bannerSlider = document.querySelector('.banner-slider');
+            if (bannerSlider) {
+                bannerSlider.addEventListener('mouseenter', stopAutoSlide);
+                bannerSlider.addEventListener('mouseleave', startAutoSlide);
+            }
 
             // Close sidebar when clicking outside on mobile
             document.addEventListener('click', (e) => {
